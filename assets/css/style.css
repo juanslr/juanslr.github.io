@@ -1026,6 +1026,87 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Roles
+--------------------------------------------------------------*/
+
+#roles{
+  margin-top: 4%;
+}
+
+#card01{
+  background-color: #ff4343;
+}
+#card02{
+  background-color: #ff0000;
+}
+#card03{
+  background-color: #094d37;
+}
+#card04{
+  background-color: #177436;
+}
+#card05{
+  background-color: #4bcc66;
+}
+#card06{
+  background-color: #2a97e2;
+}
+#card07{
+  background-color: #ddc104;
+}
+
+#card08{
+  background-color: #7628ce;
+
+}
+
+
+
+#card09{
+  background-color: #16ffec;
+}
+#card09-center{
+  margin: 0 auto;
+
+}
+
+
+#rolAdmin{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+#adminbanner{
+  font-size: large;
+  margin-bottom: 30px;
+  color: red;
+}
+
+#especial{
+  border-spacing: 10%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+#especialbanner{
+  text-align: center;
+  font-size: large;
+  margin-bottom: 30px;
+  color: yellow;
+}
+
+
+#basicorol{
+  text-align: center;
+  font-size: large;
+  margin-bottom: 30px;
+  color: aqua;
+}
+
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
