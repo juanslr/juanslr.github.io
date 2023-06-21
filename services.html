@@ -12,10 +12,13 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +26,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -83,15 +88,25 @@
         <div class="text-center text-danger">
           <strong><p style="font-size: medium;">Whitelist activa</p></strong>
         </div>
+          <div>
+            <!--SERVER STATUS-->
+
+
+          <br><br>
+          <p class="h4 mt-3 mb-3 ms-3">Server Status:</p>
+          <div class="statusbox">
+              <p id="server_url_title" class="fw-bold mb-1">Cargando...</p>
+              <div id="statue">Cargando...</div>
+              <div id="name">Cargando...</div>
+          </div>
+
+            <!--SERVER STATUS-->
+
         <div style="font-size: medium;">
           <ul>
-            <li>IP: 90.106.175.28</li>
             <p></p>
-            <li>Version: 1.20.1</li>
             <p></p>
-            <li>Requisitos: <a href="https://download.oracle.com/java/17/archive/jdk-17.0.4_windows-x64_bin.exe">Java 17</a></li>
-            <p></p>
-          </ul>
+            <li class="text-warning"> &#9888; Requisitos: <a href="https://download.oracle.com/java/17/archive/jdk-17.0.4_windows-x64_bin.exe">Java 17</a></li>
         </div>
 
         <div class="row">
@@ -102,10 +117,14 @@
                       channel="981952288862113832"
                       width="1300"
                       height="500"
-              ></widgetbot>
+              >
+            </widgetbot>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-            <div id="txtOut"></div>
+            <div id="txtOut">
+            </div>
+
+
 <!--
           </div>
           <div class="col-md-6">
@@ -140,7 +159,8 @@
         Designed by <a href="">Juan.s.l.r</a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
+  <!-- End  Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -154,6 +174,7 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/status.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

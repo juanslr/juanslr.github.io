@@ -38,6 +38,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+.statusbox {
+  font-family: 'Kanit', sans-serif;
+  min-width: 5em;
+  min-height: 2em;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 19px;
+}
+.label {
+  text-align: right;
+  float: left;
+  margin-right: 1em;
+  min-width: 1em;
+  color: #ffffff;
+}
+.grey {
+  color: #666;
+}
+
+.fa-check{
+  color: #18d26e;
+}
+
+.fa-times{
+  color: red;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
