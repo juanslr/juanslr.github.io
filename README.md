@@ -159,6 +159,6 @@ async def ping(ctx):
 
 <center><P>UNETE A NUESTRO DISCORD</P></center>
 <a href="">
-<img src="[[https://www.svgrepo.com/show/452188/discord.svg](https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png](https://www.svgrepo.com/show/353655/discord-icon.svg))" alt="Discord Logo" style="width: 100px; max-width: 100px;" />
+<img src="[https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord Logo" style="width: 100px; max-width: 100px;" />
 </a>
 
