@@ -23,4 +23,4 @@ Este documento recopila los pasos y tecnologías empleadas en el desarrollo de l
 
 ## Connect with me
 
-<p align="center">🔗 LinkedIn: <a href="htttps://linkedin.com/juansergiolora" target="_blank">juanslr</a></p>
+<p align="center">🔗 LinkedIn: <a href="htttps://linkedin.com/juansergiolora" target="_blank">juansergiolora</a></p>
