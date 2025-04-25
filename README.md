@@ -157,8 +157,8 @@ async def ping(ctx):
 
 <p align="center">🔗 LinkedIn: <a href="htttps://linkedin.com/juansergiolora" target="_blank">juansergiolora</a></p>
 
-<P>UNETE A NUESTRO DISCORD</P>
+<center><P>UNETE A NUESTRO DISCORD</P></center>
 <a href="">
-<img src="https://www.svgrepo.com/show/452188/discord.svg" alt="Discord Logo" style="width: 100%; max-width: 100px;" />
+<img src="https://www.svgrepo.com/show/452188/discord.svg" alt="Discord Logo" style="width: 100px; max-width: 100px;" />
 </a>
 
