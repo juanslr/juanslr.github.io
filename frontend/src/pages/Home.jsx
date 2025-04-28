@@ -18,6 +18,7 @@ const Home = () => {
         Únete a la Comunidad
       </a>
     </section>
+    <center><iframe src="https://discord.com/widget?id=762312334642642984&amp;theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></center>
   );
 };
 
