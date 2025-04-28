@@ -22,6 +22,7 @@ const Contacto = () => {
           Enviar
         </button>
       </form>
+      <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
     </section>
   );
 };
