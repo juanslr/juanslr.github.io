@@ -15,7 +15,7 @@ const Comunidad = () => {
         </div>
         <div className="bg-gray-800 p-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-2 text-purple-300">Bot Integrado</h3>
-          <p>Consulta tus puntos, gana recompensas y más desde Discord directamente.</p>
+          <p>En randomcord trabajamos para mejorar cada dia un poco mas.</p>
         </div>
       </div>
     </section>
