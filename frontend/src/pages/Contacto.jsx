@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import WidgetBot from '@widgetbot/react-embed';
 
 const Contacto = () => {
   const [scriptLoaded, setScriptLoaded] = useState(false);
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed';
-    script.async = true;
-    script.onload = () => setScriptLoaded(true);
-    document.body.appendChild(script);
-  }, []);
 
   return (
     <section className="py-20 px-4 max-w-4xl mx-auto text-center">
@@ -37,23 +30,15 @@ const Contacto = () => {
       <p className="mt-10 mb-4">
         En caso de no poder enviarnos un email, podrás ponerte en contacto con nosotros en el servidor:
       </p>
-
-      {scriptLoaded && (
-        <div className="w-full max-w-full overflow-hidden rounded-lg shadow-lg">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `
-                <widgetbot
-                  server="762312334642642984"
-                  channel="1366796419188658379"
-                  width="100%"
-                  height="600"
-                ></widgetbot>
-              `,
-            }}
-          />
-        </div>
-      )}
+      {/* Embed del WidgetBot */}
+      <div className="mt-8">
+        <WidgetBot
+          server="762312334642642984"
+          channel="1366796419188658379"
+          width="100%"
+          height="500px"
+        />
+      </div>
     </section>
   );
 };
