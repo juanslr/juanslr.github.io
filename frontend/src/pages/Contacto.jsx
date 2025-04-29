@@ -1,32 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Contacto = () => {
-  const widgetContainerRef = useRef(null);
+  const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed';
     script.async = true;
-
-    script.onload = () => {
-      if (window.WidgetBot) {
-        new window.WidgetBot({
-          server: '762312334642642984',
-          channel: '1366796419188658379',
-          width: '800',
-          height: '600',
-          container: widgetContainerRef.current,
-        });
-      }
-    };
-
+    script.onload = () => setScriptLoaded(true);
     document.body.appendChild(script);
   }, []);
 
   return (
-    <section className="py-20 px-4 max-w-3xl mx-auto text-center">
+    <section className="py-20 px-4 max-w-4xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Contacto</h2>
       <p className="text-lg mb-8">¿Tienes dudas o sugerencias? ¡Queremos escucharte!</p>
+
       <form className="space-y-6">
         <input
           type="email"
@@ -44,10 +33,27 @@ const Contacto = () => {
           Enviar
         </button>
       </form>
-      <p className="mt-8">
+
+      <p className="mt-10 mb-4">
         En caso de no poder enviarnos un email, podrás ponerte en contacto con nosotros en el servidor:
       </p>
-      <div ref={widgetContainerRef} className="mt-4 mx-auto" />
+
+      {scriptLoaded && (
+        <div className="w-full max-w-full overflow-hidden rounded-lg shadow-lg">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+                <widgetbot
+                  server="762312334642642984"
+                  channel="1366796419188658379"
+                  width="100%"
+                  height="600"
+                ></widgetbot>
+              `,
+            }}
+          />
+        </div>
+      )}
     </section>
   );
 };
