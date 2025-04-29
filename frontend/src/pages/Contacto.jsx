@@ -1,6 +1,28 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Contacto = () => {
+  const widgetContainerRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@widgetbot/html-embed';
+    script.async = true;
+
+    script.onload = () => {
+      if (window.WidgetBot) {
+        new window.WidgetBot({
+          server: '762312334642642984',
+          channel: '1366796419188658379',
+          width: '800',
+          height: '600',
+          container: widgetContainerRef.current,
+        });
+      }
+    };
+
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <section className="py-20 px-4 max-w-3xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Contacto</h2>
@@ -22,16 +44,10 @@ const Contacto = () => {
           Enviar
         </button>
       </form>
-      <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
-  
-      <widgetbot
-      server="762312334642642984"
-      channel="1366796419188658379"
-      width="800"
-      height="600"
-      ></widgetbot>
-      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-      
+      <p className="mt-8">
+        En caso de no poder enviarnos un email, podrás ponerte en contacto con nosotros en el servidor:
+      </p>
+      <div ref={widgetContainerRef} className="mt-4 mx-auto" />
     </section>
   );
 };
