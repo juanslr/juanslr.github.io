@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import WidgetBot from '@widgetbot/react-embed';
+import React from 'react';
 
 const Contacto = () => {
-  const [scriptLoaded, setScriptLoaded] = useState(false);
-
   return (
     <section className="py-20 px-4 max-w-4xl mx-auto text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Contacto</h2>
@@ -26,19 +23,7 @@ const Contacto = () => {
           Enviar
         </button>
       </form>
-
-      <p className="mt-10 mb-4">
-        En caso de no poder enviarnos un email, podrás ponerte en contacto con nosotros en el servidor:
-      </p>
-      {/* Embed del WidgetBot */}
-      <div className="mt-8">
-        <WidgetBot
-          server="762312334642642984"
-          channel="1366796419188658379"
-          width="100%"
-          height="500px"
-        />
-      </div>
+      <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
     </section>
   );
 };
