@@ -29,7 +29,6 @@ const Contacto = () => {
         <WidgetBot
           server="TU_ID_DEL_SERVIDOR"
           channel="TU_ID_DEL_CANAL"
-          shard="TU_ID_DEL_SHARD" // Opcional, solo si usas varios shards
           width="100%"
           height="500px"
         />
