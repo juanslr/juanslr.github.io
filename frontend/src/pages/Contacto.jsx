@@ -24,6 +24,17 @@ const Contacto = () => {
         </button>
       </form>
       <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
+      {/* Embed del WidgetBot */}
+      <div className="mt-8">
+        <WidgetBot
+          server="TU_ID_DEL_SERVIDOR"
+          channel="TU_ID_DEL_CANAL"
+          shard="TU_ID_DEL_SHARD" // Opcional, solo si usas varios shards
+          width="100%"
+          height="500px"
+        />
+      </div>
+
     </section>
   );
 };
