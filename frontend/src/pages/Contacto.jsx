@@ -23,6 +23,15 @@ const Contacto = () => {
         </button>
       </form>
       <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
+  
+      <widgetbot
+      server="762312334642642984"
+      channel="1366796419188658379"
+      width="800"
+      height="600"
+      ></widgetbot>
+      <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+      
     </section>
   );
 };
