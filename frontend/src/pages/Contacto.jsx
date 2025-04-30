@@ -1,4 +1,6 @@
 import React from 'react';
+import WidgetBot from '@widgetbot/react-embed'
+
 
 const Contacto = () => {
   return (
@@ -24,11 +26,11 @@ const Contacto = () => {
         </button>
       </form>
       <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
-            {/* Embed del WidgetBot */}
-            <div className="mt-8">
+      {/* Embed del WidgetBot */}
+      <div className="mt-8">
         <WidgetBot
-          server="TU_ID_DEL_SERVIDOR"
-          channel="TU_ID_DEL_CANAL"
+          server="762312334642642984"
+          channel="1366796419188658379"
           width="100%"
           height="500px"
         />
