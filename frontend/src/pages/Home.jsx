@@ -16,7 +16,7 @@ const Home = () => {
           rel="noopener noreferrer"
           className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300"
         >
-          Únete a la Comunidadddddd
+          Únete a la Comunidad
         </a>
       </section>
       
