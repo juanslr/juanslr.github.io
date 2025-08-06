@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section className="text-center py-20 px-4">
       <h2 className="text-4xl md:text-5xl font-bold mb-4 text-purple-400">
-        Bienvenido a RandomCord
+        Bienvenido a RandomCord +
       </h2>
       <p className="text-lg mb-8">
         Una comunidad conectada por Discord y gamificada con un sistema de puntos.
