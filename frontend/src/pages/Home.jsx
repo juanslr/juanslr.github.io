@@ -19,17 +19,19 @@ const Home = () => {
           Únete a la Comunidad
         </a>
       </section>
-      <center>
+
+      <div className="flex justify-center">
         <iframe
-          src="https://discord.com/widget?id=762312334642642984&amp;theme=dark"
+          src="https://discord.com/widget?id=762312334642642984&theme=dark"
           width="350"
           height="500"
           allowTransparency="true"
           frameBorder="0"
           sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
         ></iframe>
-      </center>
+      </div>
     </>
   );
 };
+
 export default Home;
