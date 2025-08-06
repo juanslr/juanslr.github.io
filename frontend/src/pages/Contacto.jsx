@@ -3,7 +3,7 @@ import React from 'react';
 const Contacto = () => {
   return (
     <section className="py-20 px-4 max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">+Contacto +</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Contacto</h2>
       <p className="text-lg mb-8">¿Tienes dudas o sugerencias? ¡Queremos escucharte!</p>
 
       <form className="space-y-6">
@@ -27,9 +27,9 @@ const Contacto = () => {
       <p className="mt-8">En caso de no poder enviarnos un email, puedes contactarnos directamente en el servidor de Discord:</p>
 
       {/* WidgetBot embed via iframe */}
-      <div className="mt-6">
-        <iframe
-          src="https://e.widgetbot.io/channels/762312334642642984/1366796419188658379"
+      <div className="mt-6"> 
+        <iframe                                                   
+          src="https://e.widgetbot.io/channels/762312334642642984/1366796419188658379"  
           height="500"
           width="100%"
           allowtransparency="true"
