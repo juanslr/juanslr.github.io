@@ -1,6 +1,4 @@
 import React from 'react';
-import WidgetBot from '@widgetbot/react-embed'
-
 
 const Contacto = () => {
   return (
@@ -25,17 +23,19 @@ const Contacto = () => {
           Enviar
         </button>
       </form>
-      <p>En caso de no poder enviarnos un email, podras ponerte en contacto con nosotros en el servidor</p>
-      {/* Embed del WidgetBot */}
-      <div className="mt-8">
-        <WidgetBot
-          server="762312334642642984"
-          channel="1366796419188658379"
-          width="100%"
-          height="500px"
-        />
-      </div>
 
+      <p className="mt-8">En caso de no poder enviarnos un email, puedes contactarnos directamente en el servidor de Discord:</p>
+
+      {/* WidgetBot embed via iframe */}
+      <div className="mt-6">
+        <iframe
+          src="https://e.widgetbot.io/channels/762312334642642984/1366796419188658379"
+          height="500"
+          width="100%"
+          allowtransparency="true"
+          frameBorder="0"
+        ></iframe>
+      </div>
     </section>
   );
 };
