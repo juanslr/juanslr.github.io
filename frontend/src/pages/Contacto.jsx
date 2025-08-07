@@ -28,21 +28,15 @@ const Contacto = () => {
 
       {/* WidgetBot embed via iframe */}
       <div className="mt-6">
-       <div className="mt-6 rounded-xl overflow-hidden shadow-lg w-full max-w-3xl mx-auto">
-  <iframe
-    title="WidgetBot Discord"
-    src="https://e.widgetbot.io/channels/762312334642642984/1366796419188658379"
-    width="100%"
-    height="500"
-    allowtransparency="true"
-    frameBorder="0"
-    className="w-full h-[500px]"
-  ></iframe>
-</div>
-
+        <iframe
+          src="https://e.widgetbot.io/channels/762312334642642984/1366796419188658379"
+          height="500"
+          width="100%"
+          allowtransparency="true"
+          frameBorder="0"
+        ></iframe>
       </div>
     </section>
   );
 };
-
 export default Contacto;
