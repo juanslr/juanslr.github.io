@@ -10,6 +10,9 @@
         "deploy": "gh-pages -d dist"
     },
     "dependencies": {
+        "@emailjs/browser": "^4.4.1",
+        "emailjs-com": "^2.6.4",
+        "lucide-react": "^0.542.0",
         "react": "^18.2.0",
         "react-device-detect": "^2.2.3",
         "react-dom": "^18.2.0",

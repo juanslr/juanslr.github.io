@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { MessageCircle, Mail } from 'lucide-react';
+
+// Inicializa EmailJS con tu clave pública
+emailjs.init('RtF5rpfeYudvW6Tq4');
 
 const Contacto = () => {
   const [email, setEmail] = useState('');
@@ -11,14 +14,30 @@ const Contacto = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // 1️⃣ Enviar correo a tu bandeja de entrada
     emailjs.send(
       'service_41fa1m2',
-      'template_19e614r',
-      { name: nombre, email: email, message: mensaje, title: 'Mensaje desde RandomCord' },
-      'RtF5rpfeYudvW6Tq4'
+      'template_1xi88ui', // plantilla para ti
+      {
+        from_name: nombre,
+        from_email: email,
+        message: mensaje,
+        title: 'Mensaje desde RandomCord'
+      }
     )
     .then(() => {
-      setStatus('✅ ¡Mensaje enviado con éxito!');
+      // 2️⃣ Enviar correo de confirmación al usuario
+      return emailjs.send(
+        'service_41fa1m2',
+        'template_19e614r', // plantilla para el usuario
+        {
+          user_email: email,   // debe coincidir con {{user_email}} en la plantilla
+          user_name: nombre    // debe coincidir con {{user_name}}
+        }
+      );
+    })
+    .then(() => {
+      setStatus('✅ ¡Mensaje enviado con éxito! Revisa tu correo para confirmación.');
       setNombre('');
       setEmail('');
       setMensaje('');
@@ -40,7 +59,7 @@ const Contacto = () => {
           </p>
         </div>
 
-        {/* Form */}
+        {/* Formulario */}
         <form className="space-y-6" onSubmit={sendEmail}>
           <input
             type="text"
@@ -74,6 +93,7 @@ const Contacto = () => {
           </button>
         </form>
 
+        {/* Estado */}
         {status && <p className="mt-4 text-purple-200">{status}</p>}
 
         {/* Discord */}
