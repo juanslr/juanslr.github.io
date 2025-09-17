@@ -7,9 +7,6 @@ A personal portfolio and project showcase, featuring a dynamic frontend, a robus
 ![Stars](https://img.shields.io/github/stars/juanslr/juanslr.github.io?style=social) 
 ![Forks](https://img.shields.io/github/forks/juanslr/juanslr.github.io?style=social)
 
-![Project Preview](/preview_example.png)
-
-
 ## 🚀 Features
 
 *   🌐 **Dynamic Web Interface:** A responsive and interactive frontend built with HTML, CSS, and JavaScript, showcasing projects and information.
