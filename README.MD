@@ -3,7 +3,7 @@
 A personal portfolio and project showcase, featuring a dynamic frontend, a robust backend, and an interactive bot.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue) 
-![License](https://img.shields.io/badge/license-No%20License-red) 
+[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![Stars](https://img.shields.io/github/stars/juanslr/juanslr.github.io?style=social) 
 ![Forks](https://img.shields.io/github/forks/juanslr/juanslr.github.io?style=social)
 
